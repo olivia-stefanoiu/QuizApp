@@ -3,14 +3,14 @@ let currentValueNumber = 0;
 let currentValueChapter = [];
 
 function handleClickTime(radio) {
-    if(radio.checked)
-    currentValueTime = radio.value;
+    if (radio.checked)
+        currentValueTime = radio.value;
     generateHref()
 }
 
 function handleClickNumber(number) {
-    if(number.checked)
-    currentValueNumber = number.value;
+    if (number.checked)
+        currentValueNumber = number.value;
     generateHref();
 }
 
@@ -37,3 +37,15 @@ function generateHref() {
         "&chapters=" +
         chaptersParam;
 }
+
+document.querySelectorAll("#time input").forEach(inputEl => {
+    inputEl.addEventListener("click", event => handleClickTime(event.target))
+})
+
+document.querySelectorAll("#number input").forEach(inputEl => {
+    inputEl.addEventListener("click", event => handleClickNumber(event.target))
+})
+
+document.querySelectorAll(".div-checkbox input").forEach(inputEl => {
+    inputEl.addEventListener("click", event => handleClickChapter(event.target))
+})
