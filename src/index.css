@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #000799;
+    --text-color: #000137;
+    --background-color: #E6E6F4;
+    --active-color: #C2C2ECFF;
+    --hover-color: #aeaeef;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* CSS */
+.button-8 {
+    background-color: var(--active-color);
+    box-sizing: border-box;
+    color: var(--text-color);
+    cursor: pointer;
+    display: block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    padding: 20px 30px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 35px;
+    width: 400px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.button-8:active {
+    box-shadow: none;
+    color: var(--text-color);
+}
+
+.button-8:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color)
+}
+
+.centerColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.quiz {
+    width: 150px;
+    box-sizing: content-box;
+    padding: 10px 10px;
+}
+
+.symbols {
+    width: 50px;
+    height:50px;
+    box-sizing: content-box;
+    padding: 10px 10px;
+}
+
+.problema {
+    width: 1000px;
+}
+
+.div-problem {
+    height: 300px;
+    width: 1000px;
+    background-color: var(--active-color);
+}
+
+.input {
+    width: 600px;
+    height: 45px;
+    font-size: 35px;
+    margin-top: 50px;
+
+}
+
+.div-problem {
+    height: 300px;
+    width: 1000px;
+    background-color: var(--active-color);
+}
+
+.margin-left {
+    margin-left: 16px;
+}
+
+.margin-right {
+    margin-right: 16px;
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+
+.div-horizontal {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div-checkbox {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.button-checkbox{
+    padding: 0px 0px;
+}
+
+.checkbox-round {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #4b38f6;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: #4b38f6;
+}
+
+.div-radio {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    align-items: center;
+}
