@@ -12,7 +12,6 @@ body {
     background-color: var(--background-color);
 }
 
-/* CSS */
 .button-8 {
     background-color: var(--active-color);
     box-sizing: border-box;
@@ -44,13 +43,13 @@ body {
     color: var(--text-color)
 }
 
-.centerColumn {
+.center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.center {
+.center-justify {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,7 +75,7 @@ body {
     padding: 10px 10px;
 }
 
-.problema {
+.width-1000 {
     width: 1000px;
 }
 
@@ -86,18 +85,13 @@ body {
     background-color: var(--active-color);
 }
 
-.input {
-    width: 600px;
-    height: 45px;
-    font-size: 35px;
-    margin-top: 50px;
 
-}
 
 .div-problem {
     height: 300px;
     width: 1000px;
     background-color: var(--active-color);
+    border-radius: 8px;
 }
 
 .margin-left {
@@ -180,4 +174,6 @@ math-field {
     margin-top: 35px;
     border-radius: 8px;
     text-decoration: none;
+    min-width: 150px;
+    min-height: 100px;
 }
