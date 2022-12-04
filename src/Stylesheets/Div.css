@@ -1,0 +1,33 @@
+.div-radio {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    align-items: center;
+}
+
+.div-checkbox {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.div-horizontal {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div-problem {
+    height: 300px;
+    width: 1000px;
+    background-color: var(--active-color);
+}

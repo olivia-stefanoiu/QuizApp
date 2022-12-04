@@ -1,0 +1,26 @@
+root {
+    --primary-color: #000799;
+    --text-color: #000137;
+    --background-color: #E6E6F4;
+    --active-color: #c9c9f5;
+    --hover-color: #aeaeef;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+
+.h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.p{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}

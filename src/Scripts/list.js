@@ -1,8 +1,5 @@
 const arr = [1,2,3]
 
-
-const storage = ElectronStoage();
-
 function generateElements() {
     let i=1;
     for(const element of arr) {

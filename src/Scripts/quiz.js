@@ -5,35 +5,32 @@ const currentValueTime = urlSearchParams.get("time");
 const currentValueNumber = urlSearchParams.get("number");
 const currentValueChapter = urlSearchParams.get("chapters");
 
-//<script defer src="//unpkg.com/mathlive"></script>
-//<script type={module}></script>
 
+function updateTimer() {
+    const timer = document.getElementById("timer");
+    timer.innerHTML = (Number.parseInt(timer.innerHTML) - 1).toString();
+    if (Number.parseInt(timer.innerHTML) === 0) {
+        clearInterval(intervalValue);
+        timer.innerHTML = "Timpul a expirat";
+        const min = document.getElementById("min");
+        min.innerHTML = "";
+        document.getElementById("formula").disabled = true;
 
-const mf = document.getElementById('formula');
+    }
+}
 
-
-function insertSymbol(target) {
-    let append = target.getAttribute("data-latex");
-    mf.setValue(mf.value+append,{suppressChangeNotifications: true});
-    //mf.executeCommand(['insert', "\\int_0^\\infty\\limits"]);
-
+function setTime() {
+    if(currentValueTime==="0"){
+        document.getElementById("timer").innerHTML = "";
+        document.getElementById("min").innerHTML="";
+    }
+    else {
+        document.getElementById("timer").innerHTML = currentValueTime;
+    }
 }
 
 
-/*
-mf.setOptions({
-    virtualKeyboardMode: "manual",
-    virtualKeyboards: "numeric symbols"
-});
+//if (Number.parseInt(currentValueTime) !== 0) {
+    let intervalValue = setInterval(updateTimer, 1000);
 
-mf.setOptions({
-    "customVirtualKeyboardLayers": HIGH_SCHOOL_KEYBOARD_LAYER,
-    "customVirtualKeyboards": HIGH_SCHOOL_KEYBOARD,
-    "virtualKeyboards": "high-school-keyboard"
-});
-*/
-
-document.querySelectorAll("button ").forEach(inputEl => {
-    inputEl.addEventListener("click", event => insertSymbol(event.target))
-
-})
+window.addEventListener("load", setTime);

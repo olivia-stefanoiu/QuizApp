@@ -7,7 +7,7 @@
 </head>
 <body>
 <div id="root" class="center-justify">
-    <div class="div-problem center-justify"></div>
+    <div class="div-problem center-justify" id="problemSpace"></div>
 
 
     <math-field id="formula"></math-field>
@@ -23,11 +23,13 @@
     </div>
     <div class="div-horizontal margin-top">
         <a class="button-8 quiz" href="problem.html">Previous</a>
+        <p class="p" id="timer"></p><p class="p" id="min">min</p>
         <a class="button-8 quiz" href="problem.html">Next</a>
     </div>
 </div>
 
 <script defer src="http://unpkg.com/mathlive"></script>
 <script src="../Scripts/quiz.js"></script>
+<script src="../Scripts/problem.js"></script>
 </body>
 </html>
