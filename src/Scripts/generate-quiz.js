@@ -20,7 +20,7 @@ function handleClickChapter(chapter) {
 }
 
 function generateHref() {
-    const link = document.querySelector("a")
+    const link = document.getElementById("nextPage");
     let chaptersParam = "";
     for (let i = 1; i <= 3; i++) {
         if (currentValueChapter[i]) {
@@ -28,7 +28,8 @@ function generateHref() {
         }
 
     }
-    chaptersParam = chaptersParam.substring(0, chaptersParam.length - 1)
+    chaptersParam = chaptersParam.substring(0, chaptersParam.length - 1);
+
     link.href = "quiz.html?" +
         "time=" +
         currentValueTime.toString() +

@@ -182,3 +182,9 @@ math-field {
     font-size: 25px;
 }
 
+.back-button{
+    position:absolute;
+    top:10px;
+    left:10px;
+
+}

@@ -11,13 +11,13 @@ async function generateElements() {
         if(done===true){
           el.style.backgroundColor="#a9e59f";
         }
-        else if(done!==null){
+        else if(done===false){
             el.style.backgroundColor="#e59f9f"
         }
         el.innerHTML = problemName;
-        el.href = "problem.html";
-
-
+        el.href = "problem.html?"
+            +"problemName="
+            +problemName;
         const div = document.querySelector("div");
         div.appendChild(el);
 
@@ -25,6 +25,11 @@ async function generateElements() {
     }
 
 }
+
+
+
+
+
 
 
 

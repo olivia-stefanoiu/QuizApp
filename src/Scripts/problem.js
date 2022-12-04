@@ -1,4 +1,6 @@
-// import "mathlive";
+const urlSearchParams = new URLSearchParams(window.location.search);
+const currentValueName = urlSearchParams.get("problemName");
+
 const mf = document.getElementById('formula');
 
 
@@ -15,12 +17,13 @@ function checkEnter(ev) {
 }
 
 function checkAnswer() {
+    console.log(currentValueName);
     if (mf.value === "1") {
         document.getElementById("problemSpace").style.background = "#a9e59f";
-        window.electronAPI.setDone("Problema 1", true)
+        window.electronAPI.setDone(currentValueName, true)
     } else {
         document.getElementById("problemSpace").style.background = "#e59f9f";
-        window.electronAPI.setDone("Problema 1", false);
+        window.electronAPI.setDone(currentValueName, false);
     }
 
 }
