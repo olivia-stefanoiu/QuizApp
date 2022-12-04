@@ -1,3 +1,4 @@
+// import "mathlive";
 const mf = document.getElementById('formula');
 
 
@@ -16,13 +17,22 @@ function checkEnter(ev) {
 function checkAnswer() {
     if (mf.value === "1") {
         document.getElementById("problemSpace").style.background = "#a9e59f";
+        window.electronAPI.setDone("Problema 1", true)
     } else {
         document.getElementById("problemSpace").style.background = "#e59f9f";
+        window.electronAPI.setDone("Problema 1", false);
     }
-    // const isDone = true;
-    // storage.set(problemName, isDone);
+
 }
 
+
+window.onload = function () {
+    const keyboardToggle = document.querySelector("#formula").shadowRoot.querySelector(".ML__virtual-keyboard-toggle")
+    if (keyboardToggle) {
+        keyboardToggle.style.display = "block"
+        keyboardToggle.style.marginLeft = "16px"
+    }
+}
 
 
 document.querySelectorAll("button ").forEach(inputEl => {
