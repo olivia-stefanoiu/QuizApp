@@ -1,4 +1,3 @@
-const urlSearchParams = new URLSearchParams(window.location.search);
 const currentValueTime = urlSearchParams.get("time");
 const currentValueNumber = urlSearchParams.get("number");
 const currentValueChapter = urlSearchParams.get("chapters");
@@ -28,7 +27,7 @@ function setTime() {
 }
 
 
-//if (Number.parseInt(currentValueTime) !== 0) {
+if (Number.parseInt(currentValueTime) !== 0) {
     let intervalValue = setInterval(updateTimer, 1000);
-
+}
 window.addEventListener("load", setTime);

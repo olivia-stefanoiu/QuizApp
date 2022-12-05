@@ -5,7 +5,7 @@ const mf = document.getElementById('formula');
 
 
 function insertSymbol(target) {
-    let append = target.getAttribute("data-latex");
+    let append = target.getAttribute("data-latex");//string de latex stocat pe buton
     mf.setValue(mf.value + append, {suppressChangeNotifications: true});
 
 }
@@ -17,13 +17,13 @@ function checkEnter(ev) {
 }
 
 function checkAnswer() {
-    console.log(currentValueName);
+
     if (mf.value === "1") {
         document.getElementById("problemSpace").style.background = "#a9e59f";
         window.electronAPI.setDone(currentValueName, true)
     } else {
         document.getElementById("problemSpace").style.background = "#e59f9f";
-        window.electronAPI.setDone(currentValueName, false);
+        window.electronAPI.setDone(currentValueName, "false");
     }
 
 }

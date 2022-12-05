@@ -1,9 +1,9 @@
-const arr = [1,2,3]
+const arr = [1,2,3,4,5]
 
 async function generateElements() {
     let i=1;
     for(const element of arr) {
-        const problemName = "Problema "+i;
+        const problemName = "Problema "+i.toString();
         const done = await window.electronAPI.getDone(problemName);
 
         const el = document.createElement("a")
@@ -11,7 +11,7 @@ async function generateElements() {
         if(done===true){
           el.style.backgroundColor="#a9e59f";
         }
-        else if(done===false){
+        else if(done==="false"){
             el.style.backgroundColor="#e59f9f"
         }
         el.innerHTML = problemName;
@@ -27,10 +27,4 @@ async function generateElements() {
 }
 
 
-
-
-
-
-
-
-generateElements()
+generateElements();

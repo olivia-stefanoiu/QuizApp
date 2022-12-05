@@ -41,14 +41,12 @@ app.on('activate', () => {
 
 
 function setDone(ev ,id, done) {
-    console.log(ev);
-    console.log(id);
-    console.log(done);
     storage.setItem(id, done);
 }
 
 function getDone(ev,id) {
-    return storage.getItem(id);
+       return storage.getItem(id);
+
 }
 
 
