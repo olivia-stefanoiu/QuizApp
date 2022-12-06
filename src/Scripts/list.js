@@ -2,7 +2,6 @@ const urlSearchParams = new URLSearchParams(window.location.search);
 const currentCategory = urlSearchParams.get("category");
 
 console.log(window.location.search)
-console.log(currentCategory);
 
 
 async function generateElements() {
@@ -11,7 +10,6 @@ async function generateElements() {
         const problemName = "Problema "+i.toString();
         const problemId=problemName+currentCategory;
 
-        console.log(problemId)
 
         const done = await window.electronAPI.getDone(problemId);
 
@@ -27,10 +25,8 @@ async function generateElements() {
         el.href = "problem.html?"
             +"category="+
             currentCategory
-            +"&problemName="
-            +problemName
-            +"&problemId="
-            +problemId;
+            +"&nr="
+            +(i-1);//array start with 0
         const div = document.querySelector("div");
         div.appendChild(el);
 

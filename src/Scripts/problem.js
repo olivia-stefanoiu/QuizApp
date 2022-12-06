@@ -1,21 +1,31 @@
 const urlSearchParams = new URLSearchParams(window.location.search);
-const currentValueName = urlSearchParams.get("problemName");
-const currentCategory = urlSearchParams.get("category");
-const currentId = urlSearchParams.get("problemId");
 
-console.log(window.location.search)
-console.log(currentCategory)
+const currentCategory = urlSearchParams.get("category");
+let currentNumber = parseInt(urlSearchParams.get("nr"));
+
 
 const mf = document.getElementById('formula');
 let answer = "";
 
-//console.log(problems.categoria1[1].enunt);
+async function loadProblem(currentNumber) {//shadows main variable
+    if (currentNumber >= 0 && currentNumber<problems[currentCategory].length) {
+        document.getElementById("problemSpace").innerHTML =
+            problems[currentCategory][currentNumber].name
+            + problems[currentCategory][currentNumber].enunt;
 
-function loadProblem() {
-    document.getElementById("problemSpace").innerHTML = currentValueName + ".   "
-     + problems[currentCategory][parseInt(currentValueName.charAt(currentValueName.length-1))].enunt;
-    answer = problems[currentCategory][parseInt(currentValueName.charAt(currentValueName.length-1))].answer;
-}
+        answer = problems[currentCategory][currentNumber].answer;
+        if(await window.electronAPI.getDone(problems[currentCategory][currentNumber].id)===true) {
+            document.getElementById("problemSpace").style.background = "#a9e59f";
+        }
+        else if(await window.electronAPI.getDone(problems[currentCategory][currentNumber].id)==="false"){
+            document.getElementById("problemSpace").style.background = "#e59f9f";
+            }
+        else{
+            document.getElementById("problemSpace").style.background = "#c9c9f5";
+        }
+        }
+    }
+
 
 
 function insertSymbol(target) {
@@ -34,10 +44,10 @@ function checkAnswer() {
 
     if (mf.value === answer) {
         document.getElementById("problemSpace").style.background = "#a9e59f";
-        window.electronAPI.setDone(currentId, true)
+        window.electronAPI.setDone(problems[currentCategory][currentNumber].id, true)
     } else {
         document.getElementById("problemSpace").style.background = "#e59f9f";
-        window.electronAPI.setDone(currentId, "false");
+        window.electronAPI.setDone(problems[currentCategory][currentNumber].id, "false");
     }
 
 }
@@ -58,6 +68,8 @@ document.querySelectorAll("button ").forEach(inputEl => {
 
 mf.addEventListener("keyup", checkEnter);
 
-loadProblem();
+document.getElementById("previous").addEventListener("click", event => loadProblem(--currentNumber));
+document.getElementById("next").addEventListener("click", event => loadProblem(++currentNumber));
+loadProblem(currentNumber);
 
 
