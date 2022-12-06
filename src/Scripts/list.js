@@ -1,9 +1,13 @@
-console.log(window.location.href);
-const arr = mapProblems.size;
+const urlSearchParams = new URLSearchParams(window.location.search);
+const currentCategory = urlSearchParams.get("category");
+
+console.log(window.location.search)
+console.log(currentCategory);
+
 
 async function generateElements() {
 
-    for(let i=1;i<=arr;i++) {
+    for(let i=1;i<=problems.categoria1.length;i++) {
         const problemName = "Problema "+i.toString();
         const done = await window.electronAPI.getDone(problemName);
 
@@ -17,7 +21,9 @@ async function generateElements() {
         }
         el.innerHTML = problemName;
         el.href = "problem.html?"
-            +"problemName="
+            +"category="+
+            currentCategory
+            +"&problemName="
             +problemName;
         const div = document.querySelector("div");
         div.appendChild(el);

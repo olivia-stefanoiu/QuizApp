@@ -1,14 +1,19 @@
 const urlSearchParams = new URLSearchParams(window.location.search);
 const currentValueName = urlSearchParams.get("problemName");
+const currentCategory = urlSearchParams.get("category");
+
+console.log(window.location.search)
+console.log(currentCategory)
 
 const mf = document.getElementById('formula');
 let answer = "";
 
+//console.log(problems.categoria1[1].enunt);
 
 function loadProblem() {
     document.getElementById("problemSpace").innerHTML = currentValueName + ".   "
-        + (mapProblems.get(currentValueName)).enunt;
-    answer = (mapProblems.get(currentValueName)).solutie;
+     + problems[currentCategory][parseInt(currentValueName.charAt(currentValueName.length-1))].enunt;
+    answer = problems[currentCategory][parseInt(currentValueName.charAt(currentValueName.length-1))].answer;
 }
 
 
