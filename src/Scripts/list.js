@@ -1,8 +1,9 @@
-const arr = [1,2,3,4,5]
+console.log(window.location.href);
+const arr = mapProblems.size;
 
 async function generateElements() {
-    let i=1;
-    for(const element of arr) {
+
+    for(let i=1;i<=arr;i++) {
         const problemName = "Problema "+i.toString();
         const done = await window.electronAPI.getDone(problemName);
 
@@ -21,7 +22,6 @@ async function generateElements() {
         const div = document.querySelector("div");
         div.appendChild(el);
 
-        i++;
     }
 
 }

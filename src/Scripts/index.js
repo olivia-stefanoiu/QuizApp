@@ -49,8 +49,13 @@ function getDone(ev,id) {
 
 }
 
+function eraseAll(){
+    storage.clear();
+}
+
 
 app.whenReady().then(() => {
     ipcMain.on('set-done', setDone)
     ipcMain.handle('get-done', getDone)
+    ipcMain.on('erase-all', eraseAll)
 })

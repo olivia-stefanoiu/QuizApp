@@ -2,6 +2,14 @@ const urlSearchParams = new URLSearchParams(window.location.search);
 const currentValueName = urlSearchParams.get("problemName");
 
 const mf = document.getElementById('formula');
+let answer = "";
+
+
+function loadProblem() {
+    document.getElementById("problemSpace").innerHTML = currentValueName + ".   "
+        + (mapProblems.get(currentValueName)).enunt;
+    answer = (mapProblems.get(currentValueName)).solutie;
+}
 
 
 function insertSymbol(target) {
@@ -18,7 +26,7 @@ function checkEnter(ev) {
 
 function checkAnswer() {
 
-    if (mf.value === "1") {
+    if (mf.value === answer) {
         document.getElementById("problemSpace").style.background = "#a9e59f";
         window.electronAPI.setDone(currentValueName, true)
     } else {
@@ -44,6 +52,6 @@ document.querySelectorAll("button ").forEach(inputEl => {
 
 mf.addEventListener("keyup", checkEnter);
 
-
+loadProblem();
 
 
