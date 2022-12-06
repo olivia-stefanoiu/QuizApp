@@ -1,6 +1,7 @@
 const urlSearchParams = new URLSearchParams(window.location.search);
 const currentValueName = urlSearchParams.get("problemName");
 const currentCategory = urlSearchParams.get("category");
+const currentId = urlSearchParams.get("problemId");
 
 console.log(window.location.search)
 console.log(currentCategory)
@@ -33,10 +34,10 @@ function checkAnswer() {
 
     if (mf.value === answer) {
         document.getElementById("problemSpace").style.background = "#a9e59f";
-        window.electronAPI.setDone(currentValueName, true)
+        window.electronAPI.setDone(currentId, true)
     } else {
         document.getElementById("problemSpace").style.background = "#e59f9f";
-        window.electronAPI.setDone(currentValueName, "false");
+        window.electronAPI.setDone(currentId, "false");
     }
 
 }

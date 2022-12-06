@@ -9,7 +9,11 @@ async function generateElements() {
 
     for(let i=1;i<=problems.categoria1.length;i++) {
         const problemName = "Problema "+i.toString();
-        const done = await window.electronAPI.getDone(problemName);
+        const problemId=problemName+currentCategory;
+
+        console.log(problemId)
+
+        const done = await window.electronAPI.getDone(problemId);
 
         const el = document.createElement("a")
         el.className = "button-8 width-1000"
@@ -24,7 +28,9 @@ async function generateElements() {
             +"category="+
             currentCategory
             +"&problemName="
-            +problemName;
+            +problemName
+            +"&problemId="
+            +problemId;
         const div = document.querySelector("div");
         div.appendChild(el);
 
