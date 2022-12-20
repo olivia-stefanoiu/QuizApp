@@ -19,7 +19,9 @@
   "license": "MIT",
   "dependencies": {
     "electron-localstorage": "^1.0.5",
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "fast-xml-parser": "^4.0.12",
+    "xml2js": "^0.4.23"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.3",

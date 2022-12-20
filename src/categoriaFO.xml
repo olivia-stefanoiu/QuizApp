@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Default for 13-FSA-L-A2-S1-AC</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text>The default category for questions shared in context '13-FSA-L-A2-S1-AC'.</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Default for 13-FSA-L-A2-S1-AC/ExParte1</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Default for 13-FSA-L-A2-S1-AC/ExParte1/FO</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 3449352  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">Determinati constanta a pentru care functia \(u(x,y)=x^5-10x^3y^2+axy^4\) sa fie armonica.</span></p><p><span style="font-size: 0.9375rem;">Determinati \( f\) olomorfa pentru care \( u=Re(f) \) si \(f(1+i)=1\)</span><br></p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3449354  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">Aratati ca functia \(u(x,y)=\dfrac{x^4-6x^2 y^2+y^4}{(x^2+y^2)^4}\) sa fie armonica.</span></p><p><span style="font-size: 0.9375rem;">Determinati \( f\) olomorfa pentru care \( u=Re(f) \) si \(f(1)=1\)</span><br></p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3449357  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">Determinati functia \(\phi\) pentru care functia \(u(x,y)=\phi(x) \phi(y)\) sa fie armonica.</span></p><p><span style="font-size: 0.9375rem;">Determinati \( f\) olomorfa pentru care \( u=Re(f) \) si \(f(1)=1+i\)</span><br></p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3449359  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">Aratati ca&nbsp; \(u(x,y)=3x^2y+2x^2-2y^2-y^3 +\mbox{ln} (x^2+y^2)\) sa fie armonica.</span></p><p><span style="font-size: 0.9375rem;">Determinati \( f\) olomorfa pentru care \( u=Re(f) \) si \(f(i)=1\)</span><br></p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3442741  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">Descrieti in plan multimea de puncte \(E=\{&nbsp; z|\, |z+3i|&lt;3\,\} \)&nbsp;&nbsp;</span></p><p><span style="font-size: 0.9375rem;">si determinati \( {\cal D}=w(E)\) pentru functia&nbsp;</span></p><p><span style="font-size: 0.9375rem;">\[w(z)= \dfrac{iz+1}{z-6i} \quad&nbsp; \].&nbsp;</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3442750  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Descrieti in plan multimea de puncte \(E=\{&nbsp; z|\, |z-1|&lt;1\, , Re(z)&lt;1\} \)&nbsp; si determinati \( {\cal D}=w(E)\) pentru functia</p><p>&nbsp;<span style="font-size: 0.9375rem;">\[w(z)= \dfrac{z-1}{iz+1} \, .&nbsp; \]&nbsp;</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3442759  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">Descrieti in plan multimea de puncte \(E=\{&nbsp; z|\, |z-1|&lt;2\,\} \)&nbsp;&nbsp;</span></p><p><span style="font-size: 0.9375rem;">si determinati \( {\cal D}=w(E)\) pentru functia&nbsp;</span></p><p><span style="font-size: 0.9375rem;">\[w(z)= \dfrac{2iz}{z+3} \quad&nbsp; \].&nbsp;</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3442764  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">Descrieti in plan multimea de puncte \(E=\{&nbsp; z|\, |z+i-1|&gt;1\,\} \)&nbsp;&nbsp;</span></p><p><span style="font-size: 0.9375rem;">si determinati \( {\cal D}=w(E)\) pentru functia&nbsp;</span></p><p><span style="font-size: 0.9375rem;">\[w(z)= \dfrac{z+1}{z+3} \quad&nbsp; \].&nbsp;</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3442771  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Descrieti in plan multimea de puncte \(E=\{&nbsp; z|\, |z-1|&lt;1\, ,\} \)&nbsp; si determinati \( {\cal D}=w(E)\) pentru functia</p><p>&nbsp;<span style="font-size: 0.9375rem;">\[w(z)= \dfrac{z+3}{2(z-2)} \, .&nbsp; \]&nbsp;</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18860138  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">Determinati constanta a pentru care functia \(u(x,y)=\mbox{cos}(x)(a\mbox{ch}(y) -\mbox{sh}(y)) \) este armonica.</span></p><p><span style="font-size: 0.9375rem;">Determinati \( f\) olomorfa pentru care \( u=Re(f) \) si \(f(i)=e\)</span><br></p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3442308  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Descrieti in plan multimea de puncte \(E=\{&nbsp; z|\, |z-i|&lt;1\, , Im(z)&lt;1\} \)&nbsp; si determinati \( {\cal D}=w(E)\) pentru functia</p><p>&nbsp;<span style="font-size: 0.9375rem;">\[w(z)= \dfrac{z-i}{z+i} \, .&nbsp; \]&nbsp;</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3442309  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">Descrieti in plan multimea de puncte \(E=\{&nbsp; z|\, |z-(\sqrt{2}-\sqrt{2}i)|&lt;2\,\} \)&nbsp;&nbsp;</span></p><p><span style="font-size: 0.9375rem;">si determinati \( {\cal D}=w(E)\) pentru functia&nbsp;</span></p><p><span style="font-size: 0.9375rem;">\[w(z)= \dfrac{z+i}{2z} \quad&nbsp; \].&nbsp;</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3449340  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">Verificati faptul ca functia \(u(x,y)=xy+x+2y+\mbox{sin}(x)\mbox{ch}(y) \) este armonica</span></p><p><span style="font-size: 0.9375rem;">Determinati \( f\) olomorfa pentru care \( u=Re(f) \) si \(f(2i)=-1+5i.\)</span><br></p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3449343  -->
+  <question type="multichoice">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">Determinati constanta a pentru care functia \(u(x,y)=\mbox{cos}(x)(\mbox{ch}(y) +a \mbox{sh}(y)) \) este armonica.</span></p><p><span style="font-size: 0.9375rem;">Determinati \( f\) olomorfa pentru care \( u=Re(f) \) si \(f(i)=1/e\)</span><br></p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

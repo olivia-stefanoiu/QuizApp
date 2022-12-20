@@ -28,7 +28,7 @@ body {
     text-align: center;
     white-space: nowrap;
     margin-bottom: 35px;
-    width: 400px;
+    width: 500px;
     border-radius: 8px;
     text-decoration: none;
 }
@@ -70,7 +70,7 @@ body {
 
 .symbols {
     width: 50px;
-    height:50px;
+    height: 50px;
     box-sizing: content-box;
     padding: 10px 10px;
 }
@@ -78,13 +78,6 @@ body {
 .width-1000 {
     width: 1000px;
 }
-
-.div-problem {
-    height: 300px;
-    width: 1000px;
-    background-color: var(--active-color);
-}
-
 
 
 .div-problem {
@@ -96,6 +89,31 @@ body {
     font-size: 25px;
     font-weight: 400;
 }
+
+.div-answer {
+    min-height: 50px;
+    width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.basic-button {
+
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    padding:20px;
+
+}
+
 
 .margin-left {
     margin-left: 16px;
@@ -126,7 +144,7 @@ body {
     font-weight: 400;
 }
 
-.button-checkbox{
+.button-checkbox {
     padding: 0px 0px;
 }
 
@@ -181,13 +199,18 @@ math-field {
     min-height: 100px;
 }
 
-.p{
+.p {
     font-size: 25px;
 }
 
-.back-button{
-    position:absolute;
-    top:10px;
-    left:10px;
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 
+}
+
+.visibilityHide {
+    visibility: hidden;
+    display: none;
 }

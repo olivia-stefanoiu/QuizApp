@@ -26,7 +26,16 @@ async function loadProblem(currentNumber) {//shadows main variable
         }
     }
 
+function displayAnswer(){
 
+
+    const divAnswer = document.createElement('div');
+    divAnswer.id = "div-answer";
+    divAnswer.className ="div-answer";
+
+    document.getElementById("answer").appendChild(divAnswer);
+
+}
 
 function insertSymbol(target) {
     let append = target.getAttribute("data-latex");//string de latex stocat pe buton
@@ -34,9 +43,15 @@ function insertSymbol(target) {
 
 }
 
+function toggleButton(){
+    document.getElementById("answerButton").style.visibility = "visible";
+    document.getElementById("answerButton").style.display = "block";
+}
+
 function checkEnter(ev) {
     if (ev.code === "Enter") {
         checkAnswer(ev.target.code);
+        toggleButton();
     }
 }
 
@@ -62,7 +77,7 @@ window.onload = function () {
 }
 
 
-document.querySelectorAll("button ").forEach(inputEl => {
+document.querySelectorAll("symbol").forEach(inputEl => {
     inputEl.addEventListener("click", event => insertSymbol(event.target))
 })
 
@@ -70,6 +85,8 @@ mf.addEventListener("keyup", checkEnter);
 
 document.getElementById("previous").addEventListener("click", event => loadProblem(--currentNumber));
 document.getElementById("next").addEventListener("click", event => loadProblem(++currentNumber));
+
 loadProblem(currentNumber);
 
+document.getElementById("answerButton").addEventListener("click", event => displayAnswer());
 

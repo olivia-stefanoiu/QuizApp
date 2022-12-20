@@ -1,9 +1,6 @@
 const urlSearchParams = new URLSearchParams(window.location.search);
 const currentCategory = urlSearchParams.get("category");
 
-console.log(window.location.search)
-
-
 async function generateElements() {
 
     for(let i=1;i<=problems.categoria1.length;i++) {
@@ -33,6 +30,5 @@ async function generateElements() {
     }
 
 }
-
 
 generateElements();

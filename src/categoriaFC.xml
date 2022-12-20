@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Default for 13-FSA-L-A2-S1-AC</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text>The default category for questions shared in context '13-FSA-L-A2-S1-AC'.</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Default for 13-FSA-L-A2-S1-AC/ExParte1</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Default for 13-FSA-L-A2-S1-AC/ExParte1/CF</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 18860134  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">a. Determinati multimea din plan pentru care \(&nbsp; \dfrac{\pi}{4} \leq \mbox {arg} (z-2i) \leq \dfrac{\pi}{2} \).</span></p><p></p><p><span style="font-size: 0.9375rem;"></span></p><p>b. Scrieti radacinile de ordin patru ale unitatii.&nbsp;</p><p>Determinati lungimea laturii patratului determinat de cele patru puncte din planul complex.</p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18860135  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">a. Determinati multimea din plan pentru care \(&nbsp; |\mbox {arg} (z+\,i)| \leq \dfrac{\pi}{6} \).</span></p><p></p><p><span style="font-size: 0.9375rem;"></span></p><p>b. Rezolvati in \( \mbox{C}\) ecuatia \(z^6+i-1=0 .\)</p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18860136  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>a. Determinati solutiile complexe ale ecuatiei<span style="font-size: 0.9375rem;">&nbsp;</span><span style="font-size: 0.9375rem;">\( \bar{z}=z^4\)</span></p><p><span style="font-size: 0.9375rem;">b. Calculati \( \mbox{sin}(1+2i) \) si&nbsp;&nbsp;\( i^{1+\sqrt{3}i}.&nbsp; \)</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18860137  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>a. Determinati solutiile complexe ale ecuatiei<span style="font-size: 0.9375rem;">&nbsp;</span><span style="font-size: 0.9375rem;">\( (1-\dfrac{1}{z})^4=-i . \)</span></p><p><span style="font-size: 0.9375rem;">b. Calculati \( \mbox{ln}(\sqrt{2}(1-i))&nbsp; \) si \(i^{1-i}.\)</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3442301  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>a. Determinati solutiile complexe ale ecuatiei</p><p>&nbsp;<span style="font-size: 0.9375rem;">\[z^4+ 5 z^2-6=0 . \]</span></p><p><span style="font-size: 0.9375rem;">b. Calculati \( \cos(1-i). \)</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3442302  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>a. Determinati numarul complex</p><p>&nbsp;<span style="font-size: 0.9375rem;">\[z= \dfrac{\sqrt{3}-i}{(1-i)(1+i)^{2021}} .\]</span></p><p><span style="font-size: 0.9375rem;">b.&nbsp; Gasiti solutiile ecuatiei \( z^{3/2}=27.\)</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3442582  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>a. Determinati numarul complex</p><p>&nbsp;<span style="font-size: 0.9375rem;">\[z= \dfrac{\sqrt{3}+i}{(1-\sqrt{3}i)(1-i)^{2021}} .\]</span></p><p><span style="font-size: 0.9375rem;">b.&nbsp; Gasiti solutiile ecuatiei \( z^{5}=-i.\)</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3449240  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">a. Calculati&nbsp; &nbsp;\( \sqrt{i} \) si determinati&nbsp;</span><span style="font-size: 0.9375rem;">solutiile complexe ale ecuatiei&nbsp;</span><span style="font-size: 0.9375rem;">&nbsp;\(z^2+ 2 z+1-i=0 . \)</span></p><p></p><p><span style="font-size: 0.9375rem;"></span></p><p>b.&nbsp;Calculati \( (1-i)^z \) pentru \( z\)&nbsp; solutie a ecuatiei \( z^{2}=-1.\)</p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3449255  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">a. Determinati multimea din plan pentru care \(&nbsp; \dfrac{\pi}{4} \leq \mbox {arg} (z-2i) \leq \dfrac{3\pi}{4} \).</span></p><p></p><p><span style="font-size: 0.9375rem;"></span></p><p>b. Scrieti radacinile de ordin cinci ale unitatii.&nbsp;</p><p>Determinati lungimea laturii pentagonului determinat de cele cinci puncte din planul complex.</p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3442627  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>a. Determinati numarul complex</p><p>&nbsp;<span style="font-size: 0.9375rem;">\[z= \dfrac{5-4i}{(2+3i)(1-\sqrt{3}i)^{15}} .\]</span></p><p><span style="font-size: 0.9375rem;">b.&nbsp; Calculati&nbsp; \( |e^{iz}| \) pentru \( z=2 e^{i\frac{3\pi}{4}}. \)</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3449285  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="font-size: 0.9375rem;">a. Determinati multimea din plan pentru care \(&nbsp; |\mbox {arg} (z-2\,i)| \leq \dfrac{\pi}{3} \).</span></p><p></p><p><span style="font-size: 0.9375rem;"></span></p><p>b. Rezolvati in \( \mbox{C}\) ecuatia \(z^6+i+1=0 .\)</p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3442632  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>a. Calculati \( \mbox{ln} (z) \) pentru numarul complex</p><p>&nbsp;<span style="font-size: 0.9375rem;">\[z= \dfrac{\sqrt{3}+i}{(1-\sqrt{3}i)(1+i)^{21}} .\]</span></p><p><span style="font-size: 0.9375rem;">b.&nbsp; Calculati \( i^z \) pentru \( z\)&nbsp; solutie a ecuatiei \( z^{3}=i.\)</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3449323  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>a. Determinati solutiile complexe ale ecuatiei<span style="font-size: 0.9375rem;">&nbsp;</span><span style="font-size: 0.9375rem;">\( \bar{z}=z^6\)</span></p><p><span style="font-size: 0.9375rem;">b. Calculati \( \mbox{sin}(2+i) \) si&nbsp;&nbsp;\( i^{1+\sqrt{5}i}.&nbsp; \)</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 3449324  -->
+  <question type="multichoice">
+    <name>
+      <text>1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>a. Determinati solutiile complexe ale ecuatiei<span style="font-size: 0.9375rem;">&nbsp;</span><span style="font-size: 0.9375rem;">\( (1+\dfrac{1}{z})^3=i . \)</span></p><p><span style="font-size: 0.9375rem;">b. Calculati \( \mbox{ln}(\sqrt{2}(1+i))&nbsp; \) si \(i^{1+i}.\)</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

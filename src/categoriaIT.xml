@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Lucrare2</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Lucrare2/IT</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 1151774  -->
+  <question type="multichoice">
+    <name>
+      <text>3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sa se calculeze integrala trigonometrica folosind integrala in complex</p><p>\[ I=\displaystyle\int_{0}^{2\pi}\dfrac{\cos{x}}{10-8\cos{x}}\,\mathrm{d}{x}\,. \]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 1151776  -->
+  <question type="multichoice">
+    <name>
+      <text>3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sa se calculeze integrala trigonometrica folosind integrala in complex</p><p>\[ I=\displaystyle\int_{0}^{2\pi}\dfrac{\sin{x}}{5+3\sin{x}}\,\mathrm{d}{x}\,. \]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 1151778  -->
+  <question type="multichoice">
+    <name>
+      <text>3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sa se calculeze integrala trigonometrica folosind integrala in complex</p><p>\[ I=\displaystyle\int_{0}^{2\pi}\dfrac{\cos{x}}{10+8\cos{x}}\,\mathrm{d}{x}\,. \]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 1151780  -->
+  <question type="multichoice">
+    <name>
+      <text>3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sa se calculeze integrala trigonometrica folosind integrala in complex</p><p>\[ I=\displaystyle\int_{0}^{2\pi}\dfrac{\sin{x}}{5-3\sin{x}}\,\mathrm{d}{x}\,. \]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 1151782  -->
+  <question type="multichoice">
+    <name>
+      <text>3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sa se calculeze integrala trigonometrica folosind integrala in complex</p><p>\[ I=\displaystyle\int_{0}^{2\pi}\dfrac{\cos{x}}{5-3\cos{x}}\,\mathrm{d}{x}\,. \]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 1151784  -->
+  <question type="multichoice">
+    <name>
+      <text>3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sa se calculeze integrala trigonometrica folosind integrala in complex</p><p>\[ I=\displaystyle\int_{0}^{2\pi}\dfrac{\cos{x}}{5+3\cos{x}}\,\mathrm{d}{x}\,. \]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 1595547  -->
+  <question type="multichoice">
+    <name>
+      <text>3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sa se calculeze integrala reala folosind integrala in complex</p><p>\[ I=\displaystyle\int_{-\infty}^{\infty}\dfrac{x^2}{x^4-4x^2+5}\,\mathrm{d}{x}\,. \]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 1580217  -->
+  <question type="multichoice">
+    <name>
+      <text>3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Sa se calculeze integrala reala folosind integrala in complex</p><p>\[ I=\displaystyle\int_{-\infty}^{\infty}\dfrac{\sin (3x)}{x^2+6x+10}\,\mathrm{d}{x}\,. \]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Răspunsul dumneavoastră este corect.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este parțial corect.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Răspunsul dumneavoastră este incorect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>...</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

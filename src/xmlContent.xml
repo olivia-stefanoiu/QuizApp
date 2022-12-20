@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<categoria1>
+
+    <problema id="Problema 1categ1">
+        <nr>1</nr>
+        <name>Probkema 1</name>
+        <enunt>Sa se rezolve 1+1</enunt>
+        <answer>1</answer>
+    </problema>
+
+    <problema id="Problema 1categ1">
+        <nr>1</nr>
+        <name>Probkema 1</name>
+        <enunt>Sa se rezolve 1+1</enunt>
+        <answer>1</answer>
+    </problema>
+
+    <problema id="Problema 1categ1">
+        <nr>1</nr>
+        <name>Probkema 1</name>
+        <enunt>Sa se rezolve 1+1</enunt>
+        <answer>1</answer>
+    </problema>
+
+
+</categoria1>
+
+

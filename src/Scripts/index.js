@@ -1,3 +1,26 @@
+let parseString = require('xml2js').parseString;
+let fs = require("fs");
+
+//let xml = fs.readFileSync("./src/xmlContent.xml")
+//let xmlObject=parseXml(xml);
+
+function parseXml(ev, xmlLink) {
+    let xmlObj = fs.readFileSync(`./src/${xmlLink}.xml`)
+    console.log("aaaaaa");
+    return new Promise((res, rej) => {
+            parseString(xmlObj, function (err, result) {
+                    if (err) {
+                        rej(err)
+                    } else {
+                        res(result)
+                    }
+                }
+            )
+        }
+    );
+}
+
+
 const {app, BrowserWindow, ipcMain} = require('electron');
 const path = require('path');
 const storage = require("electron-localstorage");
@@ -40,16 +63,16 @@ app.on('activate', () => {
 });
 
 
-function setDone(ev ,id, done) {
+function setDone(ev, id, done) {
     storage.setItem(id, done);
 }
 
-function getDone(ev,id) {
-       return storage.getItem(id);
+function getDone(ev, id) {
+    return storage.getItem(id);
 
 }
 
-function eraseAll(){
+function eraseAll() {
     storage.clear();
 }
 
@@ -58,4 +81,5 @@ app.whenReady().then(() => {
     ipcMain.on('set-done', setDone)
     ipcMain.handle('get-done', getDone)
     ipcMain.on('erase-all', eraseAll)
+    ipcMain.handle('xml-parse', parseXml)
 })
