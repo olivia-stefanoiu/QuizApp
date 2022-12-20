@@ -18,9 +18,12 @@ async function getXml() {
     let xmlObject;
 
 
-    for(let i=0;i<categorii.length;i++){
-        xmlObject= await window.electronAPI.parseXml(categorii[i]);
-        console.log(xmlObject)
+    for(let i=0;i<=0;i++){//categorii.length
+        xmlObject= await window.electronAPI.parseXml(categorii[i]);//id enunt raspunsuri, raspuns corect
+        console.log(xmlObject.quiz.question[0])
+        console.log(xmlObject.quiz.question[0].questiontext[0].text[0])//enunt
+        console.log(xmlObject.quiz.question[0].answer[0].text[0]);
+
     }
 }
 
