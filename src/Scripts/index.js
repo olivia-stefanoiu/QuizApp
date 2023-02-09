@@ -6,7 +6,7 @@ let fs = require("fs");
 
 function parseXml(ev, xmlLink) {
     let xmlObj = fs.readFileSync(`./src/${xmlLink}.xml`)
-    console.log("aaaaaa");
+
     return new Promise((res, rej) => {
             parseString(xmlObj, function (err, result) {
                     if (err) {

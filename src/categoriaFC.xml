@@ -3,9 +3,7 @@
 
 <!-- question: 18860134  -->
   <question type="multichoice">
-    <name>
-      <text>1</text>
-    </name>
+
     <questiontext format="html">
       <text><![CDATA[<p><span style="font-size: 0.9375rem;">a. Determinati multimea din plan pentru care \(&nbsp; \dfrac{\pi}{4} \leq \mbox {arg} (z-2i) \leq \dfrac{\pi}{2} \).</span></p><p></p><p><span style="font-size: 0.9375rem;"></span></p><p>b. Scrieti radacinile de ordin patru ale unitatii.&nbsp;</p><p>Determinati lungimea laturii patratului determinat de cele patru puncte din planul complex.</p><p></p>]]></text>
     </questiontext>

@@ -1,26 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
 <!-- question: 0  -->
-  <question type="category">
-    <category>
-      <text>$course$/top/Lucrare2</text>
-    </category>
-    <info format="html">
-      <text></text>
-    </info>
-    <idnumber></idnumber>
-  </question>
 
 <!-- question: 0  -->
-  <question type="category">
-    <category>
-      <text>$course$/top/Lucrare2/IT</text>
-    </category>
-    <info format="html">
-      <text></text>
-    </info>
-    <idnumber></idnumber>
-  </question>
 
 <!-- question: 1151774  -->
   <question type="multichoice">

@@ -1,37 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
 <!-- question: 0  -->
-  <question type="category">
-    <category>
-      <text>$course$/top/Default for 13-FSA-L-A2-S1-AC</text>
-    </category>
-    <info format="moodle_auto_format">
-      <text>The default category for questions shared in context '13-FSA-L-A2-S1-AC'.</text>
-    </info>
-    <idnumber></idnumber>
-  </question>
+
 
 <!-- question: 0  -->
-  <question type="category">
-    <category>
-      <text>$course$/top/Default for 13-FSA-L-A2-S1-AC/ExParte1</text>
-    </category>
-    <info format="html">
-      <text></text>
-    </info>
-    <idnumber></idnumber>
-  </question>
-
-<!-- question: 0  -->
-  <question type="category">
-    <category>
-      <text>$course$/top/Default for 13-FSA-L-A2-S1-AC/ExParte1/FO</text>
-    </category>
-    <info format="html">
-      <text></text>
-    </info>
-    <idnumber></idnumber>
-  </question>
 
 <!-- question: 3449352  -->
   <question type="multichoice">
