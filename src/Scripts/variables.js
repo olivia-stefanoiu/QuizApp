@@ -24,8 +24,8 @@ async function getXml() {
         xmlObject.quiz.question.forEach((question, index) => {
             problems[categorii[i]].push({
                 nr: index,
-                name: `Problema ${index}.`,
-                id: `Problema${index}-${categorii[i]}`,
+                name: `Problema ${index+1}.`,
+                id: `Problema${index+1}-${categorii[i]}`,
                 questiontext:question.questiontext[0].text[0],
                 answers:question.answer
             })

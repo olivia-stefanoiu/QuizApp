@@ -4,14 +4,14 @@ const currentCategory = urlSearchParams.get("category");
 let currentNumber = parseInt(urlSearchParams.get("nr"));
 
 
-const mf = document.getElementById('formula');
+const mf = document.getElementById("formula");
 let answer = "";
 
 async function loadProblem(currentNumber) {//shadows main variable
-    if (currentNumber >= 0 && currentNumber<problems[currentCategory].length) {
+
         document.getElementById("problemSpace").innerHTML =
             problems[currentCategory][currentNumber].name
-            + problems[currentCategory][currentNumber].enunt;
+            + problems[currentCategory][currentNumber].questiontext;
 
         answer = problems[currentCategory][currentNumber].answer;
         if(await window.electronAPI.getDone(problems[currentCategory][currentNumber].id)===true) {
@@ -23,7 +23,7 @@ async function loadProblem(currentNumber) {//shadows main variable
         else{
             document.getElementById("problemSpace").style.background = "#c9c9f5";
         }
-        }
+
     }
 
 function displayAnswer(){
@@ -85,8 +85,6 @@ mf.addEventListener("keyup", checkEnter);
 
 document.getElementById("previous").addEventListener("click", event => loadProblem(--currentNumber));
 document.getElementById("next").addEventListener("click", event => loadProblem(++currentNumber));
-
-loadProblem(currentNumber);
-
 document.getElementById("answerButton").addEventListener("click", event => displayAnswer());
 
+getXml().then(()=>loadProblem(currentNumber));

@@ -2,8 +2,7 @@ const urlSearchParams = new URLSearchParams(window.location.search);
 const currentCategory = urlSearchParams.get("category");
 
 async function generateElements() {
-    console.log(problems[currentCategory].length)
-    console.log(currentCategory);
+
     for (let i = 1; i <= problems[currentCategory].length; i++) {
         const problemName = "Problema " + i.toString();
         const problemId = problemName + currentCategory;
@@ -33,4 +32,9 @@ async function generateElements() {
 
 }
 
-getXml().then((generateElements))
+getXml().then(()=>{
+    generateElements()
+
+    console.log(problems)
+    console.log(problems["categoriaFC"][0].name);
+})
