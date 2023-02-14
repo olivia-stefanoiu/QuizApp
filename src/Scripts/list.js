@@ -4,9 +4,9 @@ const currentCategory = urlSearchParams.get("category");
 async function generateElements() {
 
     for (let i = 1; i <= problems[currentCategory].length; i++) {
+
         const problemName = "Problema " + i.toString();
         const problemId = problemName + currentCategory;
-
 
         const done = await window.electronAPI.getDone(problemId);
 
@@ -25,7 +25,7 @@ async function generateElements() {
             currentCategory
             + "&nr="
             + (i - 1);//array start with 0
-        const div = document.querySelector("div");
+        const div = document.querySelector("div");//!!!!!!!!
         div.appendChild(el);
 
     }
