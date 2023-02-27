@@ -7,29 +7,107 @@ let problems = {
     , "categoriaSLR": []
 }
 
+
 const categorii = ["categoriaFC", "categoriaFO", "categoriaIR", "categoriaIT", "categoriaITR", "categoriaSLR"]
+
+
+function removeTextFromString(str) {
+    const startString = '<span style';
+    const endChar = '>';
+
+
+    while (str.indexOf(startString) !== -1) {
+        const startIndex = str.indexOf(startString);
+        const endIndex = str.indexOf(endChar, startIndex);
+
+        if (startIndex >= 0 && endIndex >= 0) {
+            str = str.slice(0, startIndex) + str.slice(endIndex + 1);
+        }
+    }
+
+    return str;
+}
+
+function removeCharacters(str) {
+    const regex = /<\/?p>|<\/?span>|&nbsp;/gi;
+    return str.replace(regex, "");
+}
+
+function insertSpace(str) {
+    const regex = / /g;
+    const replacement = "\\mspace{5mu} ";
+    return str.replace(regex, replacement);
+}
+
+function parseLatex(problem) {
+    // const regex3 = /(\$|\\\(|\\\)|\\\[|\\\]|\\begin\{.?\}|\\end\{.?\}|\s\\\w+{.*?}\s)/g
+    const regex = /\$|\\\(|\\\)|\\\[|\\\]/g
+    const tokens = problem.split(regex)
+    // console.log(tokens)
+    // const mergedTokens = []
+    // let runningMath = ""
+    //
+    // for (let i = 0; i < tokens.length; i++) {
+    //     if (i % 4 === 0) {
+    //         mergedTokens.push(runningMath)
+    //         runningMath = ""
+    //         mergedTokens.push(tokens[i])
+    //     } else {
+    //         runningMath = runningMath + tokens[i]
+    //     }
+    // }
+    // return mergedTokens.slice(1)
+    return tokens;
+}
+
+
+function stripHtml(html) {
+
+    let strip = html;
+
+    strip = removeTextFromString(strip)
+    console.log(strip)
+    strip = removeCharacters(strip)
+    console.log(strip)
+    strip = parseLatex(strip)
+    console.log(strip)
+   // strip = insertSpace(strip)
+
+    return strip;
+}
+
+function stripHtmlQuestion(html) {
+    const questionStrip=[]
+    for(let i=0;i<html.length;i++) {
+        let strip = html[i].text[0]
+
+        strip = removeTextFromString(strip)
+        strip = removeCharacters(strip)
+        strip = parseLatex(strip)
+        // strip = insertSpace(strip)
+        questionStrip.push(strip)
+    }
+
+    return questionStrip;
+}
 
 async function getXml() {
     let xmlObject;
 
 
-    for (let i = 0; i < categorii.length; i++) {//categorii.length
+    for (let i = 0; i < 1; i++) {//categorii.length
         xmlObject = await window.electronAPI.parseXml(categorii[i]);//id enunt raspunsuri, raspuns corect
-       /*
-        console.log(xmlObject.quiz.question[0])
-        console.log(xmlObject.quiz.question[0].questiontext[0].text[0])//enunt
-        console.log(xmlObject.quiz.question[0].answer.length);//raspunsurile
-        console.log(xmlObject.quiz.question.length)//numarul de intrebari
-*/
+
         xmlObject.quiz.question.forEach((question, index) => {
             problems[categorii[i]].push({
                 nr: index,
-                name: `Problema ${index+1}.`,
-                id: `Problema${index+1}-${categorii[i]}`,
-                questiontext:question.questiontext[0].text[0],
-                answers:question.answer
+                name: `Problema ${index + 1}.`,
+                id: `Problema${index + 1}-${categorii[i]}`,
+                questiontext: stripHtml(question.questiontext[0].text[0]),
+                answers: stripHtmlQuestion(question.answer) //question.answer
             })
         })
+
 
     }
 
