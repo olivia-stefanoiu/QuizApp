@@ -66,17 +66,15 @@ function stripHtml(html) {
     let strip = html;
 
     strip = removeTextFromString(strip)
-    console.log(strip)
     strip = removeCharacters(strip)
-    console.log(strip)
     strip = parseLatex(strip)
-    console.log(strip)
    // strip = insertSpace(strip)
 
     return strip;
 }
 
 function stripHtmlQuestion(html) {
+    console.log(html)
     const questionStrip=[]
     for(let i=0;i<html.length;i++) {
         let strip = html[i].text[0]

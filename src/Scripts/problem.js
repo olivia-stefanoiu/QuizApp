@@ -27,6 +27,7 @@ async function loadProblem(currentNumber) {//shadows main variable
 
         const el = document.createElement("button")
         el.name="answers"
+        el.id="answers"+a
         el.className = "button-8 width-1000"
         el.innerHTML = problems[currentCategory][currentNumber].answers[a];
         document.getElementById("answer").appendChild(el);
@@ -45,7 +46,7 @@ async function loadProblem(currentNumber) {//shadows main variable
             document.getElementById("problemSpace").appendChild(el);
         } else {
             const el = document.createElement("math-field")
-            el.setAttribute("data-default-mode", "inline-math")
+            el.setAttribute("default-mode", "inline-math")
             el.className = "math-field"
             el.setValue(problems[currentCategory][currentNumber].questiontext[i],
                 {suppressChangeNotifications: true});
@@ -95,7 +96,7 @@ function toggleButton() {
 // }
 
 
-function checkAnswer() {
+function checkAnswer(answerId) {
 
 
 }
@@ -123,7 +124,7 @@ document.getElementById("answerButton").addEventListener("click", event => displ
 
 document.querySelectorAll(name="answers").forEach(item => {
     item.addEventListener('click', event => {
-        checkAnswer()
+        checkAnswer(item.id)
     })
 })
 
