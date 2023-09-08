@@ -3,20 +3,6 @@ const urlSearchParams = new URLSearchParams(window.location.search);
 const currentCategory = urlSearchParams.get("category");
 let currentNumber = parseInt(urlSearchParams.get("nr"));
 
-//const mf = document.getElementById('problemSpace');
-
-// function styleMf(){
-//     const styleEl = document.createElement("style")
-//     styleEl.innerHTML = ".ML__base{\n" +
-//         "    display: flex;\n" +
-//         "    flex-wrap: wrap;\n" +
-//         "    width: 950px;\n" +
-//         "    overflow-wrap:normal;\n"+
-//         "}"
-//
-//     document.querySelector("#problemSpace").shadowRoot.appendChild(styleEl)
-// }
-
 
 async function loadProblem(currentNumber) {//shadows main variable
     //vezi cum faci sa nu se strice la 0 si ==answer
@@ -29,9 +15,22 @@ async function loadProblem(currentNumber) {//shadows main variable
         el.name="answers"
         el.id="answers"+a
         el.className = "button-8 width-1000"
-        el.innerHTML = problems[currentCategory][currentNumber].answers[a];
         document.getElementById("answer").appendChild(el);
 
+        for (let i = 0; i < problems[currentCategory][currentNumber].answers[a].length; i++) {
+            if (i % 2 === 0) {
+                const ans = document.createElement("span")
+                ans.innerHTML = problems[currentCategory][currentNumber].answers[a][i];
+                document.getElementById("answers"+a).appendChild(ans);
+            } else {
+                const ans = document.createElement("math-field")
+                ans.className = "math-field"
+                ans.contentEditable="false"
+                ans.setValue(problems[currentCategory][currentNumber].answers[a][i],
+                    {suppressChangeNotifications: true});
+                document.getElementById("answers"+a).appendChild(ans);
+            }
+        }
     }
     // document.getElementById("problemSpace").innerHTML = problems[currentCategory][currentNumber].name + problems[currentCategory][currentNumber].questiontext;
     for (let i = 0; i < problems[currentCategory][currentNumber].questiontext.length; i++) {
@@ -46,8 +45,8 @@ async function loadProblem(currentNumber) {//shadows main variable
             document.getElementById("problemSpace").appendChild(el);
         } else {
             const el = document.createElement("math-field")
-            el.setAttribute("default-mode", "inline-math")
             el.className = "math-field"
+            el.contentEditable="false"
             el.setValue(problems[currentCategory][currentNumber].questiontext[i],
                 {suppressChangeNotifications: true});
             document.getElementById("problemSpace").appendChild(el);
@@ -75,14 +74,6 @@ function displayAnswer() {
 
 }
 
-/*
-function insertSymbol(target) {
-    let append = target.getAttribute("data-latex");//string de latex stocat pe buton
-    mf.setValue(mf.value + append, {suppressChangeNotifications: true});
-
-}
-*/
-
 function toggleButton() {
     document.getElementById("answerButton").style.visibility = "visible";
     document.getElementById("answerButton").style.display = "block";
@@ -100,23 +91,6 @@ function checkAnswer(answerId) {
 
 
 }
-
-
-/*
-window.onload = function () {
-    const keyboardToggle = document.querySelector("#formula").shadowRoot.querySelector(".ML__virtual-keyboard-toggle")
-    if (keyboardToggle) {
-        keyboardToggle.style.display = "block"
-        keyboardToggle.style.marginLeft = "16px"
-    }
-}
-*/
-
-// document.querySelectorAll("symbol").forEach(inputEl => {
-//     inputEl.addEventListener("click", event => insertSymbol(event.target))
-// })
-
-//mf.addEventListener("keyup", checkEnter);
 
 document.getElementById("previous").addEventListener("click", event => loadProblem(--currentNumber));
 document.getElementById("next").addEventListener("click", event => loadProblem(++currentNumber));

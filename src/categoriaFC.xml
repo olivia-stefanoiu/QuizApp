@@ -29,7 +29,7 @@
     </incorrectfeedback>
     <shownumcorrect/>
     <answer fraction="0" format="html">
-      <text><![CDATA[<p>...</p>]]></text>
+      <text><![CDATA[<p>\(&nbsp;  \dfrac{\pi}{4} \leq \mbox {arg} (z-2i) \leq \dfrac{\pi}{2} \).</p>]]></text>
       <feedback format="html">
         <text></text>
       </feedback>

@@ -7,14 +7,12 @@ let problems = {
     , "categoriaSLR": []
 }
 
-
 const categorii = ["categoriaFC", "categoriaFO", "categoriaIR", "categoriaIT", "categoriaITR", "categoriaSLR"]
 
 
 function removeTextFromString(str) {
     const startString = '<span style';
     const endChar = '>';
-
 
     while (str.indexOf(startString) !== -1) {
         const startIndex = str.indexOf(startString);
@@ -43,20 +41,7 @@ function parseLatex(problem) {
     // const regex3 = /(\$|\\\(|\\\)|\\\[|\\\]|\\begin\{.?\}|\\end\{.?\}|\s\\\w+{.*?}\s)/g
     const regex = /\$|\\\(|\\\)|\\\[|\\\]/g
     const tokens = problem.split(regex)
-    // console.log(tokens)
-    // const mergedTokens = []
-    // let runningMath = ""
-    //
-    // for (let i = 0; i < tokens.length; i++) {
-    //     if (i % 4 === 0) {
-    //         mergedTokens.push(runningMath)
-    //         runningMath = ""
-    //         mergedTokens.push(tokens[i])
-    //     } else {
-    //         runningMath = runningMath + tokens[i]
-    //     }
-    // }
-    // return mergedTokens.slice(1)
+
     return tokens;
 }
 
@@ -74,7 +59,7 @@ function stripHtml(html) {
 }
 
 function stripHtmlQuestion(html) {
-    console.log(html)
+    //console.log(html)
     const questionStrip=[]
     for(let i=0;i<html.length;i++) {
         let strip = html[i].text[0]
@@ -92,8 +77,7 @@ function stripHtmlQuestion(html) {
 async function getXml() {
     let xmlObject;
 
-
-    for (let i = 0; i < 1; i++) {//categorii.length
+    for (let i = 0; i < categorii.length; i++) {//categorii.length
         xmlObject = await window.electronAPI.parseXml(categorii[i]);//id enunt raspunsuri, raspuns corect
 
         xmlObject.quiz.question.forEach((question, index) => {
@@ -102,28 +86,12 @@ async function getXml() {
                 name: `Problema ${index + 1}.`,
                 id: `Problema${index + 1}-${categorii[i]}`,
                 questiontext: stripHtml(question.questiontext[0].text[0]),
-                answers: stripHtmlQuestion(question.answer) //question.answer
+                answers: stripHtmlQuestion(question.answer) //question.answers
             })
         })
 
-
     }
 
-    // for (let j = 0; j < xmlObject.quiz.question.length; j++) {
-    //     problems[categorii[i]][currentNumber].nr = j;
-    //     problems[categorii[i]][currentNumber].name = "Problema " + j + ".";
-    //     problems[categorii[i]][currentNumber].id = "Problema " + j + categorii[i]
-    //     problems[categorii[i]][currentNumber]
-    // }
-
+    console.log(xmlObject);
 }
-
-//console.log(problems["categoriaFC"][0].name);
-
-/*
-for (const problem of problems["categoriaFC"]){
-    console.log(wololo);
-    console.log(problem.name);
-}
-*/
 
