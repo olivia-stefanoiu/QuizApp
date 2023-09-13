@@ -6,10 +6,7 @@ let problems = {
     , "categoriaITR": []
     , "categoriaSLR": []
 }
-
 const categorii = ["categoriaFC", "categoriaFO", "categoriaIR", "categoriaIT", "categoriaITR", "categoriaSLR"]
-
-
 function removeTextFromString(str) {
     const startString = '<span style';
     const endChar = '>';
@@ -31,11 +28,11 @@ function removeCharacters(str) {
     return str.replace(regex, "");
 }
 
-function insertSpace(str) {
-    const regex = / /g;
-    const replacement = "\\mspace{5mu} ";
-    return str.replace(regex, replacement);
-}
+// function insertSpace(str) {
+//     const regex = / /g;
+//     const replacement = "\\mspace{5mu} ";
+//     return str.replace(regex, replacement);
+// }
 
 function parseLatex(problem) {
     // const regex3 = /(\$|\\\(|\\\)|\\\[|\\\]|\\begin\{.?\}|\\end\{.?\}|\s\\\w+{.*?}\s)/g
@@ -74,6 +71,14 @@ function stripHtmlQuestion(html) {
     return questionStrip;
 }
 
+function generateCorrectAnswerVector(answers){
+    const correctAnswer =[]
+    for (let i=0;i<answers.length;i++){
+        correctAnswer[i]=answers[i].$.fraction;
+    }
+    return correctAnswer;
+}
+
 async function getXml() {
     let xmlObject;
 
@@ -86,12 +91,14 @@ async function getXml() {
                 name: `Problema ${index + 1}.`,
                 id: `Problema${index + 1}-${categorii[i]}`,
                 questiontext: stripHtml(question.questiontext[0].text[0]),
-                answers: stripHtmlQuestion(question.answer) //question.answers
+                answers: stripHtmlQuestion(question.answer), //question.answers
+                raspuns:stripHtml(question.generalfeedback[0].text[0]),
+                correctAnswer: generateCorrectAnswerVector(question.answer)
             })
         })
 
     }
-
     console.log(xmlObject);
+    console.log(problems)
 }
 

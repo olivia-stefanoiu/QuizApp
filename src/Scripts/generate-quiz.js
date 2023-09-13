@@ -3,7 +3,6 @@ let currentValueNumber = 0;
 let currentValueChapter = [0,0,0,0,0];
 
 
-
 async function loadPreferences() {
 
     //get the preferences form local
@@ -26,10 +25,9 @@ async function loadPreferences() {
         document.getElementById(await window.electronAPI.getDone("number")).checked = true;
     }
     if(currentValueChapter!==[0,0,0,0,0]) {//look into
-        for (let i = 1; i <= 3; i++) {
-            console.log(currentValueChapter[i])
+        for (let i = 0; i <= 5; i++) {
             if (currentValueChapter[i]) {
-                document.getElementById("categ" + i.toString()).checked = true;
+                document.getElementById(categorii[i]).checked = true;
             }
         }
     }
@@ -65,16 +63,18 @@ async function handleClickChapter(chapter) {
 function generateHref() {
     const link = document.getElementById("nextPage");
     let chaptersParam = "";
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 0; i <= 5; i++) {
         if (currentValueChapter[i]) {
-            chaptersParam = chaptersParam + i.toString() + ",";
+            chaptersParam = chaptersParam + categorii[i] + ",";
         }
-
     }
-    chaptersParam = chaptersParam.substring(0, chaptersParam.length - 1);
 
+    chaptersParam = chaptersParam.substring(0,chaptersParam.length-1)
+
+   //chaptersParam = chaptersParam.substring(0, chaptersParam.length - 1);
+console.log(currentValueTime.toString())
     link.href = "quiz.html?" +
-        "time=" +
+        "&time=" +
         currentValueTime.toString() +
         "&number=" +
         currentValueNumber.toString() +

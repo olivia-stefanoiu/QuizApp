@@ -21,10 +21,13 @@ async function generateElements() {
 
         el.innerHTML = problemName;
         el.href = "problem.html?"
-            + "category=" +
+            + "&category=" +
             currentCategory
             + "&nr="
-            + (i - 1);//array start with 0
+            + (i - 1)+
+            "&problemId="+
+            problemId;
+
         const div = document.querySelector("div");//!!!!!!!!
         div.appendChild(el);
 
@@ -35,6 +38,5 @@ async function generateElements() {
 getXml().then(()=>{
     generateElements()
 
-    console.log(problems)
-    console.log(problems["categoriaFC"][0].name);
+
 })

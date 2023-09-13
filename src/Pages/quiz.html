@@ -4,33 +4,26 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../index.css"/>
-</head>
 <body>
+
 <a class=" back-button"  href="generate-quiz.html">Back</a>
+
 <div id="root" class="center-justify">
-    <div class="div-problem center-justify" id="problemSpace"></div>
 
+    <span id="problemSpace" class="div-problem center-justify margin-bottom">
+    </span>
 
-    <math-field id="formula"></math-field>
+    <div id="answer"></div>
+
 
     <div class="div-horizontal margin-top">
-        <button class="button-8  symbols" data-latex="\cos">cos</button>
-        <button class="button-8 symbols" data-latex="\sin">sin</button>
-        <button class="button-8 symbols" data-latex="\arctg">arctg</button>
-        <button class="button-8 symbols" data-latex="\ln">ln</button>
-        <button class="button-8 symbols" data-latex="\sqrt">&#8730;</button>
-        <button class="button-8 symbols" data-latex="\sqrt[n]">n&#8730;</button>
-        <button class="button-8 symbols" data-latex="\int_0^\infty\limits">&#8747;</button>
-    </div>
-    <div class="div-horizontal margin-top">
-        <a class="button-8 quiz" href="problem.html">Previous</a>
         <p class="p" id="timer"></p><p class="p" id="min">min</p>
-        <a class="button-8 quiz" href="problem.html">Next</a>
+        <a class="button-8 quiz" id="nextProblem">Next</a>
     </div>
 </div>
 
 <script defer src="http://unpkg.com/mathlive"></script>
-<script defer src="../Scripts/problem.js"></script>
+<script defer src="../Scripts/variables.js"></script>
 <script defer src="../Scripts/quiz.js"></script>
 
 </body>

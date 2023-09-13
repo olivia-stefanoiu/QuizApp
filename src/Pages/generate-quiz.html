@@ -5,22 +5,38 @@
     <title>Title</title>
     <link rel="stylesheet" href="../index.css"/>
 </head>
+
 <body>
 <a class="back-button" href="index.html">Back</a>
+
 <div id="root" class="center-justify">
     <h1 class="h1">Quiz</h1>
+
     <div class="div-checkbox">
-        <input type="checkbox" class="checkbox-round" value="1" id="categ1">
-        <button class="button-8 button-checkbox">Categorie 1</button>
+        <input type="checkbox" class="checkbox-round" value="0" id="categoriaFC">
+        <button class="button-8 button-checkbox">Functii Complexe</button>
     </div>
     <div class="div-checkbox">
-        <input type="checkbox" class="checkbox-round" value="2" id="categ2">
-        <button class="button-8 button-checkbox">Categorie 2</button>
+        <input type="checkbox" class="checkbox-round" value="1" id="categoriaFO">
+        <button class="button-8 button-checkbox">Functii Olomorfe</button>
     </div>
     <div class="div-checkbox">
-        <input type="checkbox" class="checkbox-round" value="3" id="categ3">
-        <button class="button-8 button-checkbox">Categorie 3</button>
+        <input type="checkbox" class="checkbox-round" value="2" id="categoriaIR">
+        <button class="button-8 button-checkbox">Integrale cu Reziduuri</button>
     </div>
+    <div class="div-checkbox">
+        <input type="checkbox" class="checkbox-round" value="3" id="categoriaIT">
+        <button class="button-8 button-checkbox">Integrale Trigonometrice</button>
+    </div>
+    <div class="div-checkbox">
+        <input type="checkbox" class="checkbox-round" value="4" id="categoriaITR">
+        <button class="button-8 button-checkbox">Integrale Trigonometrice cu Reziduuri</button>
+    </div>
+    <div class="div-checkbox">
+        <input type="checkbox" class="checkbox-round" value="5" id="categoriaSLR">
+        <button class="button-8 button-checkbox">Serii Laurent cu Reziduuri</button>
+    </div>
+
 
     <div class="div-radio" id="number">
         <p>Numar probleme: </p>
@@ -44,6 +60,9 @@
     </div>
     <a class="button-8 quiz" id="nextPage" href="quiz.html" id="link">Genereaza</a>
 </div>
+
+<script defer src="../Scripts/variables.js"></script>
 <script src="../Scripts/generate-quiz.js" defer></script>
+
 </body>
 </html>

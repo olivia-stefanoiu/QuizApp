@@ -12,6 +12,7 @@ body {
     background-color: var(--background-color);
 }
 
+
 .button-8 {
     background-color: var(--active-color);
     box-sizing: border-box;
@@ -79,8 +80,16 @@ body {
     width: 1000px;
 }
 
+.math-field {
+    flex-direction: row;
+    /*background: rgb(201, 201, 245);*/
+    background: transparent;
+    flex-wrap: wrap;
+    align-content: center;
+    border : none;
+}
 
-.div-problem {
+.div-problem  {
     height: 300px;
     width: 1000px;
     background-color: var(--active-color);
@@ -107,6 +116,7 @@ body {
 
 }
 
+
 .basic-button {
 
     font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
@@ -120,7 +130,6 @@ body {
 
 }
 
-
 .margin-left {
     margin-left: 16px;
 }
@@ -130,11 +139,11 @@ body {
 }
 
 .margin-top {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .margin-bottom {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .div-horizontal {
@@ -186,36 +195,6 @@ body {
     align-items: center;
 }
 
-/*.math-field {*/
-/*    background-color: white;*/
-/*    box-sizing: border-box;*/
-/*    color: var(--text-color);*/
-/*    cursor: pointer;*/
-/*    display: block;*/
-/*    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;*/
-/*    font-size: 25px;*/
-/*    font-weight: 400;*/
-/*    outline: none;*/
-/*    border: 2px;*/
-/*    border-color: var(--text-color);*/
-/*    padding: 20px 30px;*/
-/*    position: relative;*/
-/*    text-align: center;*/
-/*    white-space: nowrap;*/
-/*    margin-top: 35px;*/
-/*    border-radius: 8px;*/
-/*    text-decoration: none;*/
-/*    min-width: 300px;*/
-/*    min-height: 100px;*/
-/*}*/
-
-.math-field {
-    flex-direction: row;
-    background: rgb(201, 201, 245);
-    flex-wrap: wrap;
-    align-content: center;
-    border : none;
-}
 
 .span {
     flex-direction: row;
@@ -235,7 +214,26 @@ body {
 
 }
 
-.visibilityHide {
+.answer-button{
     visibility: hidden;
-    display: none;
+
+    background-color: var(--active-color);
+    box-sizing: border-box;
+    color: var(--text-color);
+    cursor: pointer;
+    display: block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    width: 100px;
+    border-radius: 8px;
+    text-decoration: none;
+
 }
