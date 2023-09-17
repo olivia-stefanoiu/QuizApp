@@ -4,9 +4,11 @@ const currentValueTime = urlSearchParams.get("time");
 const currentValueNumber = urlSearchParams.get("number");
 const currentValueChapter = urlSearchParams.get("chapters").split(',');
 
-let quizProblems=[]
-let problemNumber =0
-let problemId =""
+console.log(currentValueNumber + "WOLOLOOLOOL")
+
+let quizProblems = []
+let problemNumber = 0
+let problemId = ""
 
 function updateTimer() {
     const timer = document.getElementById("timer");
@@ -37,8 +39,8 @@ function getRandomInt(max) {
 }
 
 
-async function checkAnswer(answerId) {
-    problemId ="Problema "+currentNumber+currentCategory;
+async function checkAnswer(answerId, currentCategory, currentNumber) {
+    problemId = "Problema " + currentNumber + currentCategory;
     console.log(problemId)
     if (problems[currentCategory][currentNumber].correctAnswer[answerId[answerId.length - 1]] === '100') {
         document.getElementById(answerId).style.background = "#a9e59f";
@@ -50,13 +52,13 @@ async function checkAnswer(answerId) {
         await window.electronAPI.setDone(problemId, "false")
 
     }
-
 }
 
 async function loadProblem() {//shadows main variable
 
-    currentCategory=(quizProblems[problemNumber].split(","))[0]
-    currentNumber=(quizProblems[problemNumber].split(","))[1]
+    let currentCategory = (quizProblems[problemNumber].split(","))[0]
+    let currentNumber = (quizProblems[problemNumber].split(","))[1]
+
     problemNumber++;
 
     document.getElementById("answer").innerHTML = ''
@@ -105,34 +107,47 @@ async function loadProblem() {//shadows main variable
 
         document.querySelectorAll(".answers").forEach(item => {
             item.addEventListener('click', event => {
-                checkAnswer(item.id)
+                checkAnswer(item.id, currentCategory, currentNumber)
             })
         })
     }
 }
 
 
-
 function generateProblemSet() {
-console.log(problems)
+    console.log(problems)
     for (i = 0; i < currentValueNumber; i++) {
-        let nrcat=getRandomInt(currentValueChapter.length)
+        let nrcat = getRandomInt(currentValueChapter.length)
         let categ = currentValueChapter[nrcat]
-        let nrprob=getRandomInt(problems[categ].length)
+        let nrprob = getRandomInt(problems[categ].length)
 
-        quizProblems.push(categ.toString()+","+nrprob.toString())
+        quizProblems.push(categ.toString() + "," + nrprob.toString())
     }
     console.log(quizProblems)
-    let currentCategory=(quizProblems[problemNumber].split(","))[0]
-   let currentNumber=(quizProblems[problemNumber].split(","))[1]
+    let currentCategory = (quizProblems[problemNumber].split(","))[0]
+    let currentNumber = (quizProblems[problemNumber].split(","))[1]
     console.log(currentCategory)
     console.log(currentNumber)
     loadProblem()
 }
 
-document.getElementById("nextProblem").addEventListener("click", event => loadProblem());
+function changeURLButton() {
+    let button = document.getElementById("nextProblem")
+    button.href = "quiz-result.q"
+    button.innerHTML = "Results"
+    console.log("changed URL")
+}
 
-getXml().then(()=>generateProblemSet())
+// document.getElementById("nextProblem").addEventListener("click", event => loadProblem());
+document.getElementById("nextProblem").addEventListener("click", event => {
+    if (problemNumber === currentValueNumber - 1) {
+        event.preventDefault() // a element is retarded
+        changeURLButton()
+    }
+
+    loadProblem()
+});
+getXml().then(() => generateProblemSet())
 window.addEventListener("load", setTime);
 let intervalValue = setInterval(updateTimer, 1000);
 
