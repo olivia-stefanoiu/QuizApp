@@ -6,23 +6,23 @@ let currentValueChapter = [0,0,0,0,0];
 async function loadPreferences() {
 
     //get the preferences form local
-    console.log(typeof (await window.electronAPI.getDone("time")));
-    if(await window.electronAPI.getDone("time")!=="") {
-        currentValueTime = document.getElementById(await window.electronAPI.getDone("time")).value;
+    console.log(typeof (await window.getDone("time")));
+    if(await window.getDone("time")!=="") {
+        currentValueTime = document.getElementById(await window.getDone("time")).value;
     }
-    if(await window.electronAPI.getDone("number")!=="") {
-        currentValueNumber = document.getElementById(await window.electronAPI.getDone("number")).value;
+    if(await window.getDone("number")!=="") {
+        currentValueNumber = document.getElementById(await window.getDone("number")).value;
     }
-    if(await window.electronAPI.getDone("chapters")!=="") {
-        currentValueChapter = await window.electronAPI.getDone("chapters");
+    if(await window.getDone("chapters")!=="") {
+        currentValueChapter = await window.getDone("chapters");
     }
 
    //check the boxes
     if(currentValueTime!==0) {
-        document.getElementById(await window.electronAPI.getDone("time")).checked = true;
+        document.getElementById(await window.getDone("time")).checked = true;
     }
     if(currentValueNumber!==0) {
-        document.getElementById(await window.electronAPI.getDone("number")).checked = true;
+        document.getElementById(await window.getDone("number")).checked = true;
     }
     if(currentValueChapter!==[0,0,0,0,0]) {//look into
         for (let i = 0; i <= 5; i++) {
@@ -39,7 +39,7 @@ async function loadPreferences() {
 function handleClickTime(time) {
     if (time.checked) {
         currentValueTime = time.value;//value variabila introdusa de noi
-        window.electronAPI.setDone("time", time.id)
+        window.setDone("time", time.id)
     }
     generateHref()
 }
@@ -47,15 +47,15 @@ function handleClickTime(time) {
 function handleClickNumber(number) {
     if (number.checked) {
         currentValueNumber = number.value;
-        window.electronAPI.setDone("number", number.id)
+        window.setDone("number", number.id)
     }
     generateHref();
 }
 
 async function handleClickChapter(chapter) {
     currentValueChapter[chapter.value] = !currentValueChapter[chapter.value];//boolean
-    window.electronAPI.setDone("chapters", currentValueChapter)
-    console.log(await window.electronAPI.getDone("chapters"));
+    window.setDone("chapters", currentValueChapter)
+    console.log(await window.getDone("chapters"));
 
     generateHref()
 }

@@ -52,7 +52,7 @@ async function loadProblem(currentNumber) {//shadows main variable
         }
 
     }
-    // const done = await window.electronAPI.getDone(problems[currentCategory][currentNumber].id);
+    // const done = await window.getDone(problems[currentCategory][currentNumber].id);
     // if (done === true) {
     //     document.getElementById("problemSpace").style.background = "#a9e59f";
     // } else if (done === "false") {
@@ -67,10 +67,10 @@ async function loadProblem(currentNumber) {//shadows main variable
         })
     })
 
+    hideAnswerBtn()
 }
 
 function displayAnswer() {
-
     if (document.getElementById("raspuns").childElementCount === 0) {
         const divAnswer = document.createElement('div');
         divAnswer.id = "divAnswer";
@@ -90,7 +90,6 @@ function displayAnswer() {
                     {suppressChangeNotifications: true});
                 document.getElementById("divAnswer").appendChild(el);
             }
-
         }
     }
     else if(document.getElementById("divAnswer").style.display==="block"){
@@ -101,24 +100,29 @@ function displayAnswer() {
     }
 }
 
-function toggleButton() {
+function makeAnswerButtonVisible() {
     document.getElementById("answerButton").style.visibility = "visible";
     document.getElementById("answerButton").style.display = "block";
+}
+
+function hideAnswerBtn(){
+    document.getElementById("answerButton").style.visibility = "hidden";
+    document.getElementById("raspuns").innerHTML = ""
 }
 
 async function checkAnswer(answerId) {
 
     if (problems[currentCategory][currentNumber].correctAnswer[answerId[answerId.length - 1]] === '100') {
         document.getElementById(answerId).style.background = "#a9e59f";
-        await window.electronAPI.setDone(problems[currentCategory][currentNumber].id, true)
-        await window.electronAPI.setDone(problemId, true)
-        toggleButton();
+        await window.setDone(problems[currentCategory][currentNumber].id, true)
+        await window.setDone(problemId, true)
     } else {
         document.getElementById(answerId).style.background = "#e59f9f";
-        await window.electronAPI.setDone(problems[currentCategory][currentNumber].id, false)
-        await window.electronAPI.setDone(problemId, "false")
+        await window.setDone(problems[currentCategory][currentNumber].id, false)
+        await window.setDone(problemId, "false")
 
     }
+    makeAnswerButtonVisible();
 
 }
 

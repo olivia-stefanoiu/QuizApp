@@ -7,17 +7,32 @@
 </head>
 <body>
 <h1 class="h1">Analiza Complexa</h1>
+<div id="auth-container">
+    <div id="auth-body">
+        <input id="email" placeholder="Email"/>
+        <input id="password" placeholder="Password" type="password"/>
+        <div id="btn-bar">
+            <button class="button-8" id="login">Intra in cont</button>
+            <button class="button-8" id="signup">Creaza cont</button>
+        </div>
+        <button class="button-8" id="hide-login">Inchide</button>
+    </div>
+</div>
 <div class="center-justify">
+    <button class="button-8" id="show-login">Login</button>
     <a class="button-8" href="list.html?category=categoriaFC" id="categoriaFC">Functii Complexe</a>
     <a class="button-8" href="list.html?category=categoriaFO" id="categoriaFO">Functii Olomorfe</a>
     <a class="button-8" href="list.html?category=categoriaIR" id="categoriaIR">Integrale cu Reziduuri</a>
     <a class="button-8" href="list.html?category=categoriaIT" id="categoriaIT">Integrale Trigonometrice</a>
-    <a class="button-8" href="list.html?category=categoriaITR" id="categoriaITR">Integrale Trigonometrice cu Reziduuri</a>
+    <a class="button-8" href="list.html?category=categoriaITR" id="categoriaITR">Integrale Trigonometrice cu
+        Reziduuri</a>
     <a class="button-8" href="list.html?category=categoriaSLR" id="categoriaSLR">Serii Laurent cu Reziduuri</a>
 
 
     <a class="button-8 quiz" id="quiz" href="generate-quiz.html">Quiz</a>
+    <script type="module" src="../Scripts/firebase.js"></script>
     <script src="../Scripts/variables.js"></script>
+    <script async src="../Scripts/auth.js"></script>
 </div>
 </body>
 </html>

@@ -8,7 +8,7 @@ async function generateElements() {
         const problemName = "Problema " + i.toString();
         const problemId = problemName + currentCategory;
 
-        const done = await window.electronAPI.getDone(problemId);
+        const done = await window.getDone(problemId);
 
         const el = document.createElement("a")
         el.className = "button-8 width-1000"

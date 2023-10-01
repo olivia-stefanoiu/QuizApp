@@ -12,6 +12,7 @@ function parseXml(ev, xmlLink) {
                     if (err) {
                         rej(err)
                     } else {
+                        fs.writeFileSync(`./${xmlLink}.json`, JSON.stringify(result))
                         res(result)
                     }
                 }

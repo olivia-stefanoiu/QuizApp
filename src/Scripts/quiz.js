@@ -40,17 +40,21 @@ async function checkAnswer(answerId, currentCategory, currentNumber) {
 
     if (problems[currentCategory][currentNumber].correctAnswer[answerId[answerId.length - 1]] === '100') {
         document.getElementById(answerId).style.background = "#a9e59f";
-        await window.electronAPI.setDone(problems[currentCategory][currentNumber].id, true)
-        await window.electronAPI.setDone(problemId, true)
+        await window.setDone(problems[currentCategory][currentNumber].id, true)
+        await window.setDone(problemId, true)
         console.log("WOLOLOLOLO")
         nrProblemeRezolvate++
     } else {
         document.getElementById(answerId).style.background = "#e59f9f";
-        await window.electronAPI.setDone(problems[currentCategory][currentNumber].id, false)
-        await window.electronAPI.setDone(problemId, "false")
+        await window.setDone(problems[currentCategory][currentNumber].id, false)
+        await window.setDone(problemId, "false")
         console.log("NUUNUNUNU")
-
     }
+
+    document.querySelectorAll(".answers").forEach(item => {
+       item.disabled = true
+    })
+
     if (problemNumber - 1 === currentValueNumber - 1) {
 
         changeButtonURL()
@@ -144,7 +148,7 @@ function changeButtonURL() {
 
     let button = document.getElementById("nextProblem")
     button.href = "quiz-result.html?"
-        + "&nrProbleme=" +
+        + "&nrProbleme=" +  // make the strings constants
         currentValueNumber
         + "&nrProblemeRezolvate=" +
         nrProblemeRezolvate;

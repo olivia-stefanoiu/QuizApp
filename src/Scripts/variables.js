@@ -83,7 +83,7 @@ async function getXml() {
     let xmlObject;
 
     for (let i = 0; i < categorii.length; i++) {//categorii.length
-        xmlObject = await window.electronAPI.parseXml(categorii[i]);//id enunt raspunsuri, raspuns corect
+        xmlObject = {...parsedProblems[categorii[i]]};//id enunt raspunsuri, raspuns corect
 
         xmlObject.quiz.question.forEach((question, index) => {
             problems[categorii[i]].push({
