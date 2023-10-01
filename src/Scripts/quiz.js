@@ -4,11 +4,10 @@ const currentValueTime = urlSearchParams.get("time");
 const currentValueNumber = urlSearchParams.get("number");
 const currentValueChapter = urlSearchParams.get("chapters").split(',');
 
-console.log(currentValueNumber + "WOLOLOOLOOL")
-
 let quizProblems = []
 let problemNumber = 0
 let problemId = ""
+let nrProblemeRezolvate = 0
 
 function updateTimer() {
     const timer = document.getElementById("timer");
@@ -21,7 +20,6 @@ function updateTimer() {
         const min = document.getElementById("min");
         min.innerHTML = "";
     }
-
 }
 
 function setTime() {
@@ -35,22 +33,27 @@ function setTime() {
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
-
 }
-
 
 async function checkAnswer(answerId, currentCategory, currentNumber) {
     problemId = "Problema " + currentNumber + currentCategory;
-    console.log(problemId)
+
     if (problems[currentCategory][currentNumber].correctAnswer[answerId[answerId.length - 1]] === '100') {
         document.getElementById(answerId).style.background = "#a9e59f";
         await window.electronAPI.setDone(problems[currentCategory][currentNumber].id, true)
         await window.electronAPI.setDone(problemId, true)
+        console.log("WOLOLOLOLO")
+        nrProblemeRezolvate++
     } else {
         document.getElementById(answerId).style.background = "#e59f9f";
         await window.electronAPI.setDone(problems[currentCategory][currentNumber].id, false)
         await window.electronAPI.setDone(problemId, "false")
+        console.log("NUUNUNUNU")
 
+    }
+    if (problemNumber - 1 === currentValueNumber - 1) {
+
+        changeButtonURL()
     }
 }
 
@@ -104,13 +107,14 @@ async function loadProblem() {//shadows main variable
                 {suppressChangeNotifications: true});
             document.getElementById("problemSpace").appendChild(el);
         }
-
-        document.querySelectorAll(".answers").forEach(item => {
-            item.addEventListener('click', event => {
-                checkAnswer(item.id, currentCategory, currentNumber)
-            })
-        })
     }
+
+
+    document.querySelectorAll(".answers").forEach(item => {
+        item.addEventListener('click', event => {
+            checkAnswer(item.id, currentCategory, currentNumber)
+        })
+    })
 }
 
 
@@ -126,23 +130,33 @@ function generateProblemSet() {
     console.log(quizProblems)
     let currentCategory = (quizProblems[problemNumber].split(","))[0]
     let currentNumber = (quizProblems[problemNumber].split(","))[1]
-    console.log(currentCategory)
-    console.log(currentNumber)
+
     loadProblem()
 }
 
-function changeURLButton() {
+function changeButtonText() {
+
     let button = document.getElementById("nextProblem")
-    button.href = "quiz-result.q"
     button.innerHTML = "Results"
-    console.log("changed URL")
+}
+
+function changeButtonURL() {
+
+    let button = document.getElementById("nextProblem")
+    button.href = "quiz-result.html?"
+        + "&nrProbleme=" +
+        currentValueNumber
+        + "&nrProblemeRezolvate=" +
+        nrProblemeRezolvate;
+
+    console.log(button.href)
 }
 
 // document.getElementById("nextProblem").addEventListener("click", event => loadProblem());
 document.getElementById("nextProblem").addEventListener("click", event => {
     if (problemNumber === currentValueNumber - 1) {
         event.preventDefault() // a element is retarded
-        changeURLButton()
+        changeButtonText()
     }
 
     loadProblem()
