@@ -35,8 +35,8 @@ async function generateElements() {
 
 }
 
-getXml().then(()=>{
-    generateElements()
-
-
+onAuthStateChange(()=>{
+    getXml().then(()=>{
+        generateElements()
+    })
 })

@@ -49,4 +49,6 @@ document.getElementById("signup").addEventListener("click", () => {
     onSignupPress()
 })
 
-document.onload = hideLoginButtonIfLoggedIn
+onAuthStateChange(()=>{
+    hideLoginButtonIfLoggedIn()
+})

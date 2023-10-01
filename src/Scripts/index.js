@@ -42,7 +42,7 @@ const createWindow = () => {
         },
     });
 
-    mainWindow.loadFile(path.join(__dirname, '../Pages/index.html'));
+    mainWindow.loadFile(path.join(__dirname, '/Pages/index.html'));
 
     mainWindow.webContents.openDevTools();
 };

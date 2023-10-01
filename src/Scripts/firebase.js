@@ -20,7 +20,7 @@ const db = firebase.firestore(app);
 const auth = firebase.auth(app);
 
 async function signUp(email, password) {
-    auth.setPersistence( "session");
+    await auth.setPersistence( "session");
     await auth.createUserWithEmailAndPassword(email, password)
 
     const uid = auth.currentUser?.providerData?.[0]?.uid
@@ -29,7 +29,7 @@ async function signUp(email, password) {
 }
 
 async function signIn(email, password) {
-    auth.setPersistence("session");
+    await auth.setPersistence("session");
     await auth.signInWithEmailAndPassword(email, password)
     // ...
 }
@@ -63,7 +63,7 @@ async function getDone(id) {
     const docRef = db.collection("userData").doc(uid);
     const docSnap = (await docRef.get()).data()
 
-    return docSnap.data()[id]
+    return docSnap[id]
 }
 
 async function eraseAllForUser() {
@@ -75,7 +75,7 @@ async function eraseAllForUser() {
     }
 
     const docRef = db.collection("userData").doc(uid);
-    await docRef.set( {})
+    await docRef.set({})
 }
 
 function isLoggedIn(){
@@ -88,3 +88,7 @@ window.setDone = setDone
 window.eraseAllForUser = eraseAllForUser
 window.getDone = getDone
 window.isLoggedIn = isLoggedIn
+
+auth.onAuthStateChanged(()=>{
+    onAuthStateChangeFnQueue.forEach(fn=>fn())
+})
