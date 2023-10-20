@@ -2,24 +2,33 @@ async function onLoginPress() {
     const email = document.getElementById("email").value
     const password = document.getElementById("password").value;
 
-    await signIn(email, password)
+    try {
+        await signIn(email, password)
 
-    hideModal()
-    hideLoginButtonIfLoggedIn()
+        hideModal()
+    } catch (e) {
+        // switch(e.code)
+        const p = document.getElementById("login_error")
+        p.innerHTML = e
+    }
 }
 
 async function onSignupPress() {
     const email = document.getElementById("email").value
     const password = document.getElementById("password").value;
 
-    await signUp(email, password)
+    try {
+        await signUp(email, password)
 
-    hideModal()
-    hideLoginButtonIfLoggedIn()
+        hideModal()
+    } catch (e) {
+        const p = document.getElementById("login_error")
+        p.innerHTML = e
+    }
 }
 
-function hideLoginButtonIfLoggedIn(){
-    if(isLoggedIn()){
+function hideLoginButtonIfLoggedIn() {
+    if (isLoggedIn()) {
         document.getElementById("show-login").style.display = "none"
     }
 }
@@ -33,12 +42,9 @@ function hideModal() {
     document.getElementById("auth-container").style.display = "none"
 }
 
-document.getElementById("show-login").addEventListener("click", () => {
+document.getElementById("show-login").addEventListener("click", async() => {
+    await signOut()
     showModal()
-})
-
-document.getElementById("hide-login").addEventListener("click", () => {
-    hideModal()
 })
 
 document.getElementById("login").addEventListener("click", () => {
@@ -49,6 +55,8 @@ document.getElementById("signup").addEventListener("click", () => {
     onSignupPress()
 })
 
-onAuthStateChange(()=>{
-    hideLoginButtonIfLoggedIn()
+onAuthStateChange(() => {
+  if (!isLoggedIn()){
+      showModal()
+  }
 })

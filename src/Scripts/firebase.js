@@ -36,7 +36,8 @@ async function signIn(email, password) {
 
 
 async function setDone(id, done) {
-    localStorage.setItem(id, done)
+    const jsondone = JSON.stringify(done)
+    localStorage.setItem(id, jsondone)
 
     const uid = auth.currentUser?.providerData?.[0]?.uid
     if (!uid) {
@@ -44,7 +45,7 @@ async function setDone(id, done) {
     }
 
     const docRef = db.collection("userData").doc(uid);
-    await docRef.update( {[id]: done})
+    await docRef.update( {[id]: jsondone})
 
 }
 
@@ -52,7 +53,7 @@ async function getDone(id) {
     const cached = localStorage.getItem(id)
 
     if(cached !== null){
-        return cached
+        return JSON.parse(cached)
     }
 
     const uid = auth.currentUser?.providerData?.[0]?.uid
@@ -63,7 +64,11 @@ async function getDone(id) {
     const docRef = db.collection("userData").doc(uid);
     const docSnap = (await docRef.get()).data()
 
-    return docSnap[id]
+    if(docSnap[id] === undefined){
+        return
+    }
+
+    return JSON.parse(docSnap[id])
 }
 
 async function eraseAllForUser() {
@@ -82,12 +87,17 @@ function isLoggedIn(){
     return !!auth.currentUser?.providerData?.[0]?.uid
 }
 
+async function signOut(){
+    await auth.signOut()
+}
+
 window.signUp = signUp
 window.signIn = signIn
 window.setDone = setDone
 window.eraseAllForUser = eraseAllForUser
 window.getDone = getDone
 window.isLoggedIn = isLoggedIn
+window.signOut = signOut
 
 auth.onAuthStateChanged(()=>{
     onAuthStateChangeFnQueue.forEach(fn=>fn())

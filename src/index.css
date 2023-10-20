@@ -12,6 +12,12 @@ body {
     background-color: var(--background-color);
 }
 
+.image {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 64px;
+}
 
 .button-8 {
     background-color: var(--active-color);
@@ -159,7 +165,7 @@ body {
 }
 
 .div-checkbox {
-    width: 400px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;

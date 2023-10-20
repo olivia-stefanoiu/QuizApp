@@ -42,13 +42,11 @@ async function checkAnswer(answerId, currentCategory, currentNumber) {
         document.getElementById(answerId).style.background = "#a9e59f";
         await window.setDone(problems[currentCategory][currentNumber].id, true)
         await window.setDone(problemId, true)
-        console.log("WOLOLOLOLO")
         nrProblemeRezolvate++
     } else {
         document.getElementById(answerId).style.background = "#e59f9f";
         await window.setDone(problems[currentCategory][currentNumber].id, false)
         await window.setDone(problemId, "false")
-        console.log("NUUNUNUNU")
     }
 
     document.querySelectorAll(".answers").forEach(item => {
@@ -163,9 +161,11 @@ document.getElementById("nextProblem").addEventListener("click", event => {
         changeButtonText()
     }
 
-    loadProblem()
+    if (problemNumber !== currentValueNumber - 0) {
+        loadProblem()
+    }
 });
 getXml().then(() => generateProblemSet())
 window.addEventListener("load", setTime);
-let intervalValue = setInterval(updateTimer, 1000);
+let intervalValue = setInterval(updateTimer, 1000*60);
 

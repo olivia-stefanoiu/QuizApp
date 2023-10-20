@@ -6,14 +6,13 @@ let currentValueChapter = [0,0,0,0,0];
 async function loadPreferences() {
 
     //get the preferences form local
-    console.log(typeof (await window.getDone("time")));
-    if(await window.getDone("time")!=="") {
+    if(await window.getDone("time")!==undefined) {
         currentValueTime = document.getElementById(await window.getDone("time")).value;
     }
-    if(await window.getDone("number")!=="") {
+    if(await window.getDone("number")!==undefined) {
         currentValueNumber = document.getElementById(await window.getDone("number")).value;
     }
-    if(await window.getDone("chapters")!=="") {
+    if(await window.getDone("chapters")!==undefined) {
         currentValueChapter = await window.getDone("chapters");
     }
 
@@ -52,10 +51,9 @@ function handleClickNumber(number) {
     generateHref();
 }
 
-async function handleClickChapter(chapter) {
+function handleClickChapter(chapter) {
     currentValueChapter[chapter.value] = !currentValueChapter[chapter.value];//boolean
     window.setDone("chapters", currentValueChapter)
-    console.log(await window.getDone("chapters"));
 
     generateHref()
 }
@@ -94,4 +92,6 @@ document.querySelectorAll(".div-checkbox input").forEach(inputEl => {
     inputEl.addEventListener("click", event => handleClickChapter(event.target))
 })
 
-window.onload=loadPreferences;
+//for onload stuff
+onAuthStateChange(()=>{
+    loadPreferences()})

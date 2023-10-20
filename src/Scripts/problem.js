@@ -36,7 +36,7 @@ async function loadProblem(currentNumber) {//shadows main variable
     for (let i = 0; i < problems[currentCategory][currentNumber].questiontext.length; i++) {
         if (i === 0) {
             const el = document.createElement("span")
-            el.innerHTML = problems[currentCategory][currentNumber].name + problems[currentCategory][currentNumber].questiontext[i];
+            el.innerHTML = problems[currentCategory][currentNumber].name + "   " + problems[currentCategory][currentNumber].questiontext[i];
             document.getElementById("problemSpace").appendChild(el);
         } else if (i % 2 === 0) {
             const el = document.createElement("span")
@@ -91,12 +91,10 @@ function displayAnswer() {
                 document.getElementById("divAnswer").appendChild(el);
             }
         }
-    }
-    else if(document.getElementById("divAnswer").style.display==="block"){
-        document.getElementById("divAnswer").style.display="none";
-    }
-    else{
-        document.getElementById("divAnswer").style.display="block";
+    } else if (document.getElementById("divAnswer").style.display === "block") {
+        document.getElementById("divAnswer").style.display = "none";
+    } else {
+        document.getElementById("divAnswer").style.display = "block";
     }
 }
 
@@ -105,7 +103,7 @@ function makeAnswerButtonVisible() {
     document.getElementById("answerButton").style.display = "block";
 }
 
-function hideAnswerBtn(){
+function hideAnswerBtn() {
     document.getElementById("answerButton").style.visibility = "hidden";
     document.getElementById("raspuns").innerHTML = ""
 }
@@ -126,8 +124,16 @@ async function checkAnswer(answerId) {
 
 }
 
-document.getElementById("previous").addEventListener("click", event => loadProblem(--currentNumber));
-document.getElementById("next").addEventListener("click", event => loadProblem(++currentNumber));
+document.getElementById("previous").addEventListener("click", event => {
+    if (currentNumber > 0) {
+        loadProblem(--currentNumber);
+    }
+})
+document.getElementById("next").addEventListener("click", event => {
+    if (currentNumber < problems[currentCategory].length - 1) {
+        loadProblem(++currentNumber);
+    }
+})
 document.getElementById("answerButton").addEventListener("click", event => displayAnswer());
 
 

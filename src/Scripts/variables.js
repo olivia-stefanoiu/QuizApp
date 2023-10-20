@@ -50,7 +50,6 @@ function stripHtml(html) {
     strip = removeTextFromString(strip)
     strip = removeCharacters(strip)
     strip = parseLatex(strip)
-   // strip = insertSpace(strip)
 
     return strip;
 }
